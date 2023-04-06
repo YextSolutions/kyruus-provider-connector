@@ -1,0 +1,9 @@
+{
+    "$id": "kyruusProviders_fetchProviders",
+    "$schema": "https://schema.yext.com/config/platform/plugin/v1",
+    "globals": {
+        "clientId": "${{clientId}}",
+        "clientSecret": "${{clientSecret}}",
+        "customer": "${{customer}}"
+    }  
+}
