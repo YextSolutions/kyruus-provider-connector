@@ -1,5 +1,5 @@
 {
-    "$id": "kyruusProviders_fetchProviders",
+    "$id": "kyruusProviders",
     "$schema": "https://schema.yext.com/config/platform/plugin/v1",
     "globals": {
         "clientId": "${{clientId}}",
