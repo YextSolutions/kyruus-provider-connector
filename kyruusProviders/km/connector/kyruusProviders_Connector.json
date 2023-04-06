@@ -1,12 +1,12 @@
 {
-  "$id": "kyruusProviders",
+  "$id": "kyruusProviders_Connector",
   "$schema": "https://schema.yext.com/config/km/connector/v3",
   "displayName": "Kyruus Providers",
   "entityType": "healthcareProfessional",
   "source": {
     "sourceConfig": {
       "functionConfig": {
-        "plugin": "kyruusSource",
+        "plugin": "kyruusProviders",
         "function": "fetchProviders",
         "dataFormat": "JSON"
       }
