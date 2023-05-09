@@ -1272,7 +1272,7 @@
             "Primary Specialty"
           ]
         },
-        "plugin": "providerCategory",
+        "plugin": "kyruusProviders_providerCategory",
         "function": "providerCategory"
       }
     }
