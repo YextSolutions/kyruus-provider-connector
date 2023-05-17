@@ -1211,6 +1211,21 @@
         "type": "JSON",
         "header": "Primary Specialty",
         "path": "provider.specialties[0].name"
+      },
+      {
+        "type": "JSON",
+        "header": "Primary Certification",
+        "path": "provider.board_certifications[0].specialty_name"
+      },
+      {
+        "type": "JSON",
+        "header": "Secondary Certification",
+        "path": "provider.board_certifications[1].specialty_name"
+      },
+      {
+        "type": "JSON",
+        "header": "Third Certification",
+        "path": "provider.board_certifications[2].specialty_name"
       }
     ]
   },
@@ -1344,19 +1359,6 @@
       "clearValueIfBlank": false
     },
     {
-      "header": "Institution Type 1",
-      "field": "educationList",
-      "subfieldPath": [
-        {
-          "index": 0
-        },
-        {
-          "name": "type"
-        }
-      ],
-      "clearValueIfBlank": false
-    },
-    {
       "header": "provider.name.middle",
       "field": "middleName",
       "subfieldPath": [],
@@ -1369,14 +1371,11 @@
       "clearValueIfBlank": false
     },
     {
-      "header": "Institution Name 1",
-      "field": "educationList",
+      "header": "Primary Certification",
+      "field": "certifications",
       "subfieldPath": [
         {
           "index": 0
-        },
-        {
-          "name": "institutionName"
         }
       ],
       "clearValueIfBlank": false
@@ -1394,9 +1393,13 @@
       "clearValueIfBlank": false
     },
     {
-      "header": "provider.board_certifications",
+      "header": "Third Certification",
       "field": "certifications",
-      "subfieldPath": [],
+      "subfieldPath": [
+        {
+          "index": 2
+        }
+      ],
       "clearValueIfBlank": false
     },
     {
@@ -1426,19 +1429,6 @@
       "clearValueIfBlank": false
     },
     {
-      "header": "Graduation Year 1",
-      "field": "educationList",
-      "subfieldPath": [
-        {
-          "index": 0
-        },
-        {
-          "name": "yearCompleted"
-        }
-      ],
-      "clearValueIfBlank": false
-    },
-    {
       "header": "Primary Zip Code",
       "field": "address",
       "subfieldPath": [
@@ -1463,6 +1453,22 @@
     {
       "header": "provider.languages",
       "field": "languages",
+      "subfieldPath": [],
+      "clearValueIfBlank": false
+    },
+    {
+      "header": "Secondary Certification",
+      "field": "certifications",
+      "subfieldPath": [
+        {
+          "index": 1
+        }
+      ],
+      "clearValueIfBlank": false
+    },
+    {
+      "header": "Primary Location Name",
+      "field": "officeName",
       "subfieldPath": [],
       "clearValueIfBlank": false
     }
