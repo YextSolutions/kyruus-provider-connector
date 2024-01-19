@@ -5,16 +5,14 @@
   "entityTypes": ["healthcareProfessional"],
   "source": {
     "sourceConfig": {
-      "functionConfig": {
-        "plugin": "kyruusProviders",
-        "function": "fetchProviders",
-        "dataFormat": "JSON"
+      "nativeSourceConfig": {
+        "source": "kyruus",
+        "operation": "fetchProviders",
+        "inputs": {
+          "kyruusLinkedAccount": "${{linkedAccountId}}",
+          "customerName": "${{customerName}}"
+        }
       }
-    },
-    "baseSelector": {
-      "type": "JSON",
-      "header": "Entity Container",
-      "path": "_result"
     },
     "selectors": [
       {
